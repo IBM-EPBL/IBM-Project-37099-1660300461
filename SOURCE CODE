@@ -1,0 +1,640 @@
+LOGIN
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+<style> 
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: #900C3F;
+}
+button { 
+       background-color: ; 
+       width: 100%;
+        color: orange; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+         } 
+ form { 
+        border: 3px solid #f1f1f1; 
+    } 
+ input[type=text], input[type=password] { 
+        width: 100%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
+    }
+ button:hover { 
+        opacity: 0.7; 
+    } 
+  .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+      
+   
+ .container { 
+        padding: 25px; 
+        background-color: #581845;
+    } 
+</style> 
+</head>  
+<body>  
+    <center> <h1> User Login</center> 
+    <form>
+        <div class="container"> 
+            <h3><label>Username : </label></h3> 
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <h3><label>Password : </label></h3>
+            <input type="password" placeholder="Enter Password" name="password" required>
+                                
+                                
+                                                <button onclick="window.location='file:///C:/Users/v-judishiah/Desktop/Teresa/index.html'">Submit</button>
+ 
+                                
+            <input type="checkbox" checked="checked"> Remember me 
+                  <button type="button" class="cancelbtn"> Cancel</button> 
+            Forgot <a href="#"> password? </a> 
+        </div> 
+    </form>   
+</body>   
+</html>
+ 
+INDEX
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+ 
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+ 
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+ 
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+ 
+p{
+                color: white
+}
+ 
+ input {
+        display: inline-block;
+        background-color: #7b38d8;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+</style>
+</head>
+<body>
+ 
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <h3><p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Smart Fashion Recommender</p></h3>
+</div>
+ 
+<div style="padding-left:16px">
+                <marquee behaviour="scroll" direction="left">
+                                <img src="Image/img1.jpg" alt="Trulli" width="1000" height="555">
+                                <img src="Image/img2.jpg" alt="Trulli" width="1000" height="555">
+                                <img src="Image/img3.jpg" alt="Trulli" width="1000" height="555">
+                </marquee>
+</div>
+<form action="products.html">
+                <input type="submit" value="Shop Now !!!"></input>
+</form>
+</body>
+</html>
+ 
+PRODUCTS
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+ 
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+ 
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+ 
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+ 
+p{
+                color: white;
+}
+ 
+.outer-grid {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 4px;
+}
+.inner-grid {
+   flex: 25%;
+   max-width: 22%;
+   padding: 0 4px;
+}
+.inner-grid img {
+   margin-top: 8px;
+   width: 100%;
+   padding: 10px;
+}
+ 
+@media screen and (max-width: 800px) {
+   .inner-grid {
+      flex: 50%;
+      max-width: 50%;
+   }
+}
+@media screen and (max-width: 600px) {
+   .inner-grid {
+      flex: 100%;
+      max-width: 100%;
+   }
+}
+ 
+</style>
+</head>
+<body>
+ 
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a class="active" href="#products">Products</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <h3><p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Smart Fashion Recommender</p></h3>
+</div>
+ 
+<!-- <div style="padding-left:16px"> -->
+<!-- </div> -->
+ 
+<div class="outer-grid">
+                <div class="inner-grid">
+                                <img src="Image/img4.jpg"/>
+                                <b><p style= "color: black; text-indent: 100px;">Cost: 2500</p></b>
+                                <b><p style="color: black; text-indent: 100px;">Product Rating: 4<progress id="p1" value="4" max="5"> 4 </progress></p></b>
+                                <img src="Image/img5.jpg"/>
+                                <b><p style= "color: black; text-indent: 100px;">Cost: 1000</p></b>
+                                <b><p style="color: black; text-indent: 100px;">Product Rating: 5<progress id="p1" value="5" max="5"> 5 </progress></p></b>
+                                <img src="Image/img8.jpg"/>
+                                <b><p style= "color: black; text-indent: 100px;">Cost: 1500</p></b>
+                                <b><p style="color: black; text-indent: 100px;">Product Rating: 3<progress id="p1" value="3" max="5"> 3 </progress></p></b>
+ 
+                </div>
+ 
+                <div class="inner-grid">
+                                <img src="Image/img9.jpg"/>
+                                <b><p style= "color: black; text-indent: 100px;">Cost: 7500</p></b>
+                                <b><p style="color: black; text-indent: 100px;">Product Rating: 4<progress id="p1" value="4" max="5"> 4 </progress></p></b>
+                                <img src="Image/img10.jpg"/>
+                                <b><p style= "color: black; text-indent: 100px;">Cost: 5500</p></b>
+                                <b><p style="color: black; text-indent: 100px;">Product Rating: 5<progress id="p1" value="5" max="5"> 5 </progress></p></b>
+                                <img src="Image/img11.jpg"/>
+                                <b><p style= "color: black; text-indent: 100px;">Cost: 4000</p></b>
+                                <b><p style="color: black; text-indent: 100px;">Product Rating: 3.5<progress id="p1" value="3.5" max="5"> 3.5 </progress></p></b>
+                </div>
+ 
+                <div class="inner-grid">
+                                <img src="Image/img12.jpg"/>
+                                <b><p style= "color: black; text-indent: 100px;">Cost: 2500</p></b>
+                                <b><p style="color: black; text-indent: 100px;">Product Rating: 4<progress id="p1" value="4" max="5"> 4 </progress></p></b>
+                                <img src="Image/img13.jpg"/>
+                                <b><p style= "color: black; text-indent: 100px;">Cost: 1500</p></b>
+                                <b><p style="color: black; text-indent: 100px;">Product Rating: 4<progress id="p1" value="4" max="5"> 4 </progress></p></b>
+                                <img src="Image/img14.jpg"/>
+                                <b><p style= "color: black; text-indent: 100px;">Cost: 3500</p></b>
+                                <b><p style="color: black; text-indent: 100px;">Product Rating: 4<progress id="p1" value="4" max="5"> 4 </progress></p></b>
+                </div>
+ 
+                <div class="inner-grid">
+                                <img src="Image/img15.jpg"/>
+                                <b><p style= "color: black; text-indent: 100px;">Cost: 3500</p></b>
+                                <b><p style="color: black; text-indent: 100px;">Product Rating: 3.5<progress id="p1" value="3.5" max="5"> 3.5 </progress></p></b>
+                                <br><br><br><br>
+                                <img src="Image/img16.jpg"/>
+                                <b><p style= "color: black; text-indent: 100px;">Cost: 2500</p></b>
+                                <b><p style="color: black; text-indent: 100px;">Product Rating: 4<progress id="p1" value="4" max="5"> 4 </progress></p></b>
+                                <br><br><br><br><br>
+                                <img src="Image/img17.jpg"/>
+                                <b><p style= "color: black; text-indent: 100px;">Cost: 1000</p></b>
+                                <b><p style="color: black; text-indent: 100px;">Product Rating: 5<progress id="p1" value="5" max="5"> 5 </progress></p></b>
+                </div>
+ 
+                
+                
+</div>
+ 
+ 
+</body>
+</html>
+ 
+ABOUT
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+ 
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+ 
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+ 
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+ 
+p {
+                color: white;
+}
+ 
+body {
+  background-image: url('Image/about.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+ 
+</style>
+</head>
+<body>
+ 
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a class="active" href="#about">About</a>
+  <a href="contact.html">Contact</a>
+  <h3><p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Smart Fashion Recommender</p></h3>
+</div>
+ 
+<br><br><br>
+<center>
+                <h1><b>About Us</b></h1>
+                <br><br>
+                <h4><p align="justify" style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi!, we the members of Smart Fashion Recommender website have created a one stop solution to all your fashion needs,</p></h4>
+                <h4><p align="justify" style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;which is what you're looking at right now, "THE SMART FASHION RECOMMENDER". Our aim is to quench your thirst for fashion.</p></h4>  
+ 
+                <h4><p align="justify" style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We always look forward to providing you with the bestest of our collections at an affordable price. Customer satisfaction </p></h4>
+ 
+                <h4><p align="justify" style="color: black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is our prime goal. Hope you enjoy shopping with us.</p></h4><br>
+ 
+                <h4><p align="justify" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regards,</p></h4>
+ 
+                <h4><p align="justify" style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Smart Fashion Recomender Team</p></h4>
+</center>
+</body>
+</html>
+ 
+CONTACT
+<!DOCTYPE html>
+<html>
+                <head>
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+                                <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+                                <style>
+                                                body {
+                                                                 margin: 0;
+                                                                 font-family: Arial, Helvetica, sans-serif;
+                                                }
+ 
+                                                .topnav {
+                                                                overflow: hidden;
+                                                                background-color: #333;
+                                                }
+ 
+                                                .topnav a {
+                                                                float: left;
+                                                                color: #f2f2f2;
+                                                                text-align: center;
+                                                                padding: 14px 16px;
+                                                                text-decoration: none;
+                                                                font-size: 17px;
+                                                }
+ 
+                                                .topnav a:hover {
+                                                                background-color: #ddd;
+                                                                color: black;
+                                                }
+ 
+                                                .topnav a.active {
+                                                                background-color: #04AA6D;
+                                                                color: white;
+                                                }
+ 
+                                                p {
+                                                                color: white;
+                                                }
+ 
+                                                body {
+                                                                background-image: url('Image/contact.jpg');
+                                                                background-repeat: no-repeat;
+                                                                background-attachment: fixed;  
+                                                                background-size: cover;
+                                                }
+ 
+                                                .fa-facebook {
+                                                                background: #3B5998;
+                                                                color: white;
+                                                                height: 60px;
+                                                                width: 80px;
+                                                                font-size: 50px;
+                                                }
+ 
+                                                .fa-instagram {
+                                                                background: #125688;
+                                                                color: white;
+                                                                height: 60px;
+                                                                width: 80px;
+                                                                font-size: 50px;
+                                                }
+ 
+                                                .fa-youtube {
+                                                                background: #bb0000;
+                                                                color: white;
+                                                                height: 60px;
+                                                                width: 80px;
+                                                                font-size: 50px;
+                                                }
+                </style>
+</head>
+ 
+ 
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About</a>
+  <a class="active" href="#contact">Contact</a>
+  <h3><p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Smart Fashion Recommender</p></h3>
+</div>
+<br><br>
+<center><h2>For more queries connect with us through the below social media accounts,</h2>
+<br>
+<ul>
+                <li> 
+                                <a href="https://www.facebook.com" class="fa fa-facebook"> </a> 
+                </li>
+                <br><br><br>
+                <li>
+                                <a href="https://www.instagram.com" class="fa fa-instagram"> </a>
+                </li>
+                <br><br><br>
+                <l1>
+                                <a href="https://www.youtube.com" class="fa fa-youtube"> </a>
+                </li>
+</ul>
+</html>
+
+MAIL INTEGRATION
+# using SendGrid's Python Library
+# https://github.com/sendgrid/sendgrid-python
+import os
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
+
+message = Mail(
+    from_email='gokulapriya.23ec@licet.ac.in',
+    to_emails='teresa.23ec@licet.ac.in',
+    subject='Sending with Twilio SendGrid is Fun',
+    html_content='<strong>Your order has been confirmed</strong>')
+try:
+    sg = SendGridAPIClient('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')
+    response = sg.send(message)
+    print(response.status_code)
+    print(response.body)
+    print(response.headers)
+except Exception as e:
+    print(e.message)
+
+CREATE A FLASK APP
+from flask import Flask, render_template
+ app = Flask( _name_ )
+ @app.route("/signin")
+def sign_in():
+return render_template("signin.html")
+ @app.route('/signup')
+def sign_up():
+return render_template("signup.html") 
+@app.route('/')
+def home():
+return render_template("home.html") 
+@app.route('/about')
+def about():
+return render_template("about.html")
+ if name ==' main ':
+app.run(debug=True)
+
+ 
+ 
+ HOMEPAGE:
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+<title>Home</title>
+<!-- Connect Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/b ootstrap.min.css" rel="stylesheet" />
+</head>
+<body background="C:\Users\Teresa\Desktop\Ass\img\img1.jpg" style="back ground-size: cover;">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand bg-light">
+<div class="container-fluid">
+<a class="navbar-
+brand" href="./"> <strong>Smart Fashion Recommender Application</strong
+> </a>
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item">
+<a class="nav-link active" href="/">Home</a> </li>
+<li class="nav-item">
+<a class="nav-link active" href='C:\Users\Teresa\Desktop\Ass\about.html'>About
+Us</a> </li>
+<li class="nav-item">
+<a class="nav-link active" href="C:\Users\Teresa\Desktop\Ass\signin.html">Signin</
+a> </li>
+<li class="nav-item">
+<a class="nav-link active" href="C:\Users\Teresa\Desktop\Ass\signup.html">Sig
+nup</a> </li>
+</ul>
+</div>
+</nav>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/b ootstrap.bundle.min.js"></script>
+<br/>
+<h1 style="text-
+align: center;color: rgb(87, 0, 250);">Smart Fashion Recommender Applic ation</h1>
+<p align="center" style="padding: 5rem;color: rgb(0, 255, 255); font- weight: 900; font-
+size:60px; font">Welcome to Smart Fashion Recommender Application.</p>
+</body>
+</html>
+
+ ABOUT PAGE:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial- scale=1.0">
+<title>Document</title>
+</head>
+<body background="C:\Users\Teresa\Desktop\Ass\img\img2.jpg"style="backg round-size: cover;">
+<h1 style="text-align:center;">About us</h1>
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif;font- size: large;">Hi!, we the members of Smart Fashion Recommender website have created a one stop solution to all your fashion needs,which is what you're looking at right now, "THE SMART FASHION RECOMMENDER". Our aim is to quench your thirst for fashion.We always look forward to providing you with the bestest of our collections at an affordable price. Customer satisfaction is our prime goal. Hope you enjoy shopping with us
+Regards
+Smart Fashion Recomender Team
+</p>
+ 
+</body>
+</html
+
+SIGN IN PAGE & DATABASE CONNECTIVITY
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial- scale=1.0">
+<title>Document</title>
+<!-- CSS only-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/boots trap.min.css" rel="stylesheet" integrity="sha384- Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" cross origin="anonymous">
+</head>
+<body>
+<form>
+<!-- Email input-->
+<div class="mb-2">
+<input type="email" id="form2Example1" class="form- control" />
+<label class="form-
+label" for="form2Example1">Email address</label>
+</div>
+<!-- Password input -->
+<div class=" mb-4">
+<input type="password" id="form2Example2" class="form- control" />
+<label class="form-
+label" for="form2Example2">Password</label>
+</div>
+ 
+<!-- 2 column grid layout for inline styling-->
+<div class="row mb-4">
+<div class="col d-flex justify-content-center">
+<div class="col">
+<!-- Submit button-->
+<button type="button" class="btn btn-primary btn-block mb- 4">Sign in</button>
+ 
+<!-- Register buttons -->
+<div class="text-center">
+<p>Not a member? <a href="signup.html">Signup</a>
+<button type="button" class="btn btn-link btn-floating mx-1">
+<i class="fab fa-facebook-f"></i>
+</button>
+ 
+<button type="button" class="btn btn-link btn-floating mx-1">
+<i class="fab fa-google"></i>
+</button>
+ 
+<button type="button" class="btn btn-link btn-floating mx-1">
+<i class="fab fa-twitter"></i>
+</button>
+ 
+<button type="button" class="btn btn-link btn-floating mx-1">
+<i class="fab fa-github"></i>
+</button>
+</div>
+</form>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/boots trap.bundle.min.js" integrity="sha384- OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" cross origin="anonymous"></script>
+</body>
+</html>
+
+Watson Assistant
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "fcaaa4c6-08ab-4e0e-a3ce-b6435fd1e12e", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "90b722a3-3b41-43c1-beea-2104ada854b8", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
